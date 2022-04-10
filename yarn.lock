@@ -1375,9 +1375,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"veriffica-lanfing-page@workspace:.":
+"veriffica-landing-page@workspace:.":
   version: 0.0.0-use.local
-  resolution: "veriffica-lanfing-page@workspace:."
+  resolution: "veriffica-landing-page@workspace:."
   dependencies:
     "@vitejs/plugin-vue": ^2.3.1
     vite: ^2.9.1
