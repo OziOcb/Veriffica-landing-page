@@ -247,7 +247,7 @@ div#loading img {
   position: relative;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 0px;
 }
 
@@ -260,7 +260,6 @@ div#loading img {
 @media (min-width: 992px) {
   .site-navbar {
     flex-flow: row nowrap;
-    justify-content: flex-start;
   }
 }
 
@@ -440,6 +439,7 @@ div#loading img {
   }
   .top-contact-menu-wraper .brand-logo {
     min-width: 50%;
+    height: 100px;
     order: 1;
     padding-bottom: 30px;
   }
@@ -572,13 +572,6 @@ div#loading img {
 .navbar {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 }
 
 .site-menu-main .nav-item {
@@ -1988,26 +1981,26 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .hero-area-l-13 {
-  padding-top: 105px;
+  padding-top: 75px;
   padding-bottom: 30px;
 }
 
 @media (min-width: 480px) {
   .hero-area-l-13 {
-    padding-top: 110px;
+    padding-top: 80px;
   }
 }
 
 @media (min-width: 768px) {
   .hero-area-l-13 {
-    padding-top: 110px;
+    padding-top: 80px;
     padding-bottom: 55px;
   }
 }
 
 @media (min-width: 992px) {
   .hero-area-l-13 {
-    padding-top: 225px;
+    padding-top: 180px;
     padding-bottom: 0px;
   }
 }
