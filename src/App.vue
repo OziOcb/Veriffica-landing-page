@@ -70,7 +70,6 @@ import TheFooter from "./components/TheFooter.vue";
 
   <TheTestimonial />
   <TheCtaSection />
-  <TheCtaSection />
   <TheFooter />
 </template>
 
