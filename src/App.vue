@@ -6,6 +6,7 @@ import TheHero from "./components/TheHero.vue";
 import ContentSection from "./components/ContentSection.vue";
 import TheTestimonial from "./components/TheTestimonial.vue";
 import TheCtaSection from "./components/TheCtaSection.vue";
+import TheFooter from "./components/TheFooter.vue";
 </script>
 
 <template>
@@ -69,6 +70,8 @@ import TheCtaSection from "./components/TheCtaSection.vue";
 
   <TheTestimonial />
   <TheCtaSection />
+  <TheCtaSection />
+  <TheFooter />
 </template>
 
 <style>
