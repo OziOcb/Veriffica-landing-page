@@ -4,6 +4,7 @@
 import TheHeader from "./components/TheHeader.vue";
 import TheHero from "./components/TheHero.vue";
 import ContentSection from "./components/ContentSection.vue";
+import TheTestimonial from "./components/TheTestimonial.vue";
 </script>
 
 <template>
@@ -64,6 +65,8 @@ import ContentSection from "./components/ContentSection.vue";
       </div>
     </div>
   </ContentSection>
+
+  <TheTestimonial />
 </template>
 
 <style>
