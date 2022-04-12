@@ -10,7 +10,7 @@
         >
           <div class="banner-image-l-13">
             <img
-              src="src/assets/image/l3/iphone-img.svg"
+              src="src/assets/image/l3/hero-image.png"
               alt=""
               class="w-100"
             />

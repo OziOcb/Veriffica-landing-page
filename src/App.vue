@@ -36,7 +36,11 @@ import TheFooter from "./components/TheFooter.vue";
       data-aos-once="true"
     >
       <div class="app-image-position-l-13">
-        <img src="src/assets/image/l3/content-img-1.png" alt="" class="w-100" />
+        <img
+          src="src/assets/image/l3/content-image-1.png"
+          alt=""
+          class="w-100"
+        />
       </div>
     </div>
   </ContentSection>
@@ -49,7 +53,11 @@ import TheFooter from "./components/TheFooter.vue";
       data-aos-once="true"
     >
       <div class="app-image-position-l-13">
-        <img src="src/assets/image/l3/content-img-2.png" alt="" class="w-100" />
+        <img
+          src="src/assets/image/l3/content-image-2.png"
+          alt=""
+          class="w-100"
+        />
       </div>
     </div>
     <div
@@ -64,6 +72,38 @@ import TheFooter from "./components/TheFooter.vue";
           Create custom landing pages with Shades that convert more visitors
           than any website, no coding required.
         </p>
+      </div>
+    </div>
+  </ContentSection>
+
+  <ContentSection>
+    <div
+      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1"
+      data-aos="fade-right"
+      data-aos-duration="800"
+      data-aos-once="true"
+    >
+      <div class="content section-heading-7">
+        <h2>Build Beautiful Landing Pages</h2>
+        <p>
+          Create custom landing pages with Shades that convert more visitors
+          than any website, no coding required.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative order-lg-1 order-0"
+      data-aos="fade-left"
+      data-aos-duration="800"
+      data-aos-once="true"
+    >
+      <div class="app-image-position-l-13">
+        <img
+          src="src/assets/image/l3/content-image-3.png"
+          alt=""
+          class="w-100"
+        />
       </div>
     </div>
   </ContentSection>
