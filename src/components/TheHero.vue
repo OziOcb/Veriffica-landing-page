@@ -24,21 +24,22 @@
           data-aos-once="true"
         >
           <div class="content ozi-hero__content">
-            <h1>Get millions of downloads!</h1>
+            <h1>Be sure!</h1>
 
             <p>
-              Create a landing page for your app with Shades to get better
-              results.
+              Check all the most important elements of the vehicle before making
+              a decision to buy it.
             </p>
 
-            <div class="apps-btn">
+            <!-- <div class="apps-btn">
               <a href="#" class="app-store"
                 ><img src="src/assets/image/l3/app-store.png" alt=""
               /></a>
               <a href="#" class="app-store"
                 ><img src="src/assets/image/l3/google-play.png" alt=""
               /></a>
-            </div>
+            </div> -->
+            <div>TODO: FORM_ADD_YOUR_EMAIL_HERE</div>
           </div>
         </div>
       </div>
