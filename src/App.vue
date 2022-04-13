@@ -21,10 +21,14 @@ import TheFooter from "./components/TheFooter.vue";
       data-aos-once="true"
     >
       <div class="content section-heading-7">
-        <h2>Build Beautiful Landing Pages</h2>
+        <h2>
+          Veriffica is designed to help people without experience in buying a
+          good used car.
+        </h2>
         <p>
-          Create custom landing pages with Shades that convert more visitors
-          than any website, no coding required.
+          It's a good starting point to
+          <strong>asses the technical condition of the car</strong>
+          and save us from spending money in a service station.
         </p>
       </div>
     </div>
@@ -67,11 +71,8 @@ import TheFooter from "./components/TheFooter.vue";
       data-aos-once="true"
     >
       <div class="content section-heading-7">
-        <h2>Build Beautiful Landing Pages</h2>
-        <p>
-          Create custom landing pages with Shades that convert more visitors
-          than any website, no coding required.
-        </p>
+        <h2>Well Explained</h2>
+        <p>You don't have to be an expert to use this app!</p>
       </div>
     </div>
   </ContentSection>
@@ -84,11 +85,8 @@ import TheFooter from "./components/TheFooter.vue";
       data-aos-once="true"
     >
       <div class="content section-heading-7">
-        <h2>Build Beautiful Landing Pages</h2>
-        <p>
-          Create custom landing pages with Shades that convert more visitors
-          than any website, no coding required.
-        </p>
+        <h2>Dark Theme</h2>
+        <p>Soothing for your eyes Good for you battery</p>
       </div>
     </div>
 
