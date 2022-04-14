@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-6">
           <div class="footer-widget-l-13">
-            <ul
+            <!-- <ul
               class="pl-0 list-unstyled d-flex flex-wrap justify-content-center align-items-end"
             >
               <li class="d-flex"><a href="">About</a></li>
@@ -27,7 +27,7 @@
               <li class="d-flex"><a href="">Works</a></li>
               <li class="d-flex"><a href="">Career</a></li>
               <li class="d-flex"><a href="">Contact</a></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
         <div class="col-md-3">

@@ -20,6 +20,12 @@
   </div>
 </template>
 
+<script setup>
+// TODO: ENDED HERE!
+// TODO: ENDED HERE! Add vuelidate
+// TODO: ENDED HERE!
+</script>
+
 <style lang="scss">
 .form {
   // max-width: 500px;
