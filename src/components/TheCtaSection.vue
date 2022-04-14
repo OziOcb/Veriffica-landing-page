@@ -17,14 +17,16 @@
                   Join over 30,000+ happy users & launch your product fast.
                 </h2>
 
-                <div class="apps-btn">
+                <div>TODO: FORM_ADD_YOUR_EMAIL_HERE</div>
+
+                <!-- <div class="apps-btn">
                   <a href="#" class="app-store">
                     <img src="src/assets/image/l3/app-store.png" alt="" />
                   </a>
                   <a href="#" class="app-store">
                     <img src="src/assets/image/l3/google-play.png" alt="" />
                   </a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
