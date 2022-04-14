@@ -39,7 +39,45 @@
                 ><img src="src/assets/image/l3/google-play.png" alt=""
               /></a>
             </div> -->
-            <div>TODO: FORM_ADD_YOUR_EMAIL_HERE</div>
+            <!-- <div>
+              <h2>Sign up for a waiting list</h2>
+
+              <form>
+                <div class="formField__control">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="email"
+                  />
+
+                  <label for="email" class="formField__label">email</label>
+                  <div class="formField__bar"></div>
+                </div>
+              </form>
+            </div> -->
+
+            <div class="ozi-formBox">
+              <h2>Sign up for a waiting list</h2>
+
+              <!-- TODO: ENDED HERE! -->
+              <!-- TODO: ENDED HERE! Podlacz vuelidate i netlify form-->
+              <!-- TODO: ENDED HERE! -->
+              <form method="post">
+                <div class="ozi-formGroup">
+                  <label for="email">Email</label>
+                  <input
+                    class="ozi-formControl"
+                    id="email"
+                    type="email"
+                    name="Email"
+                    placeholder="your e-mail"
+                  />
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="Submit" />
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -50,9 +88,45 @@
 </template>
 
 <style lang="scss" scoped>
-.ozi-hero__content * {
-  @media (min-width: 992px) {
-    color: #fbfbfb !important;
+.ozi {
+  &-hero__content * {
+    @media (min-width: 992px) {
+      color: #fbfbfb !important;
+    }
+  }
+
+  &-formBox {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgba(#393939, 0.3);
+    border-radius: 8px;
+    background: #ffffff;
+
+    h2,
+    p,
+    label,
+    input {
+      color: #000 !important;
+    }
+
+    label {
+      opacity: 0;
+      height: 0;
+      display: none;
+    }
+
+    h2 {
+      font-size: 27px;
+    }
+
+    input {
+      width: 100%;
+      padding-left: 6px;
+      &::placeholder {
+        color: #444 !important;
+      }
+    }
   }
 }
 </style>

@@ -187,6 +187,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vuelidate/core@npm:^2.0.0-alpha.40":
+  version: 2.0.0-alpha.40
+  resolution: "@vuelidate/core@npm:2.0.0-alpha.40"
+  dependencies:
+    vue-demi: ^0.12.0
+  checksum: 80d209fb9df5fee093c8ad084b1a6a5022e8434a852b21711b8e3f026bb4426805c73fcf194133439c82b72622a5b05addcd44a05bfff00c3af816672086f4a0
+  languageName: node
+  linkType: hard
+
+"@vuelidate/validators@npm:^2.0.0-alpha.28":
+  version: 2.0.0-alpha.28
+  resolution: "@vuelidate/validators@npm:2.0.0-alpha.28"
+  dependencies:
+    vue-demi: ^0.12.0
+  checksum: 23ef26671768d6197f21c71797d15dd39d107c91810411e7a8c6735600304fee85dd6bf53973ba3536c4213ea2fc7c9a0486e5423d869b92ad17932f197d9ce5
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -1527,6 +1545,8 @@ __metadata:
   resolution: "veriffica-landing-page@workspace:."
   dependencies:
     "@vitejs/plugin-vue": ^2.3.1
+    "@vuelidate/core": ^2.0.0-alpha.40
+    "@vuelidate/validators": ^2.0.0-alpha.28
     sass: ^1.50.0
     vite: ^2.9.1
     vue: ^3.2.31
@@ -1559,6 +1579,22 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 0f0ac9337fa5c17faa4a59831a2df17475563b23a6162e86b2b60b19835ca1277f3249ea7a6608880354b39caf05779e9bad1e3b1f5b27010deced224aae47ea
+  languageName: node
+  linkType: hard
+
+"vue-demi@npm:^0.12.0":
+  version: 0.12.5
+  resolution: "vue-demi@npm:0.12.5"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: 40a0470caea8312e0d4df2541f141c36c768dfc7f2f7d41f0f28ba29df11d3119e2f09b94c815f13b7c7f3f45dbc247b0e9e0c02a1800e2823e241c1d771e39b
   languageName: node
   linkType: hard
 

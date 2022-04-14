@@ -2075,7 +2075,7 @@ li.sub-menu--item.nav-item-has-children i {
 .hero-area-l-13 .content .btn {
   min-width: 210px;
   height: 60px;
-  background: #FC593B;
+  background: #0B65B3;
   border-radius: 5px;
   font-family: Karla;
   font-style: normal;
@@ -2084,7 +2084,7 @@ li.sub-menu--item.nav-item-has-children i {
   line-height: 21px;
   text-align: center;
   letter-spacing: -0.9px;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   margin-top: 22px;
 }
 
