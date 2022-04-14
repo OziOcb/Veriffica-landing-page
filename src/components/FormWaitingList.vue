@@ -1,29 +1,79 @@
 <template>
   <div class="form">
-    <h2 class="form__title">Sign up for a waiting list</h2>
+    <template v-if="!state.isSuccessful">
+      <h2 class="form__title">Sign up for a waiting list</h2>
 
-    <form class="form__form" method="post">
-      <div class="form__inputWrapper inputWrapper">
-        <label class="inputWrapper__label" for="email">Email</label>
+      <form class="form__form" @submit.prevent="submit">
+        <div
+          class="form__inputWrapper inputWrapper"
+          :class="{ 'inputWrapper--error': v$.email.$errors.length }"
+        >
+          <label class="inputWrapper__label" for="email">Email</label>
 
-        <input
-          class="inputWrapper__input"
-          id="email"
-          type="email"
-          name="Email"
-          placeholder="your e-mail"
-        />
-      </div>
+          <input
+            class="inputWrapper__input"
+            id="email"
+            type="text"
+            name="Email"
+            placeholder="your e-mail"
+            v-model="state.email"
+          />
 
-      <button class="form__submitBtn" type="submit">Submit</button>
-    </form>
+          <div
+            class="inputWrapper__errors"
+            v-for="error of v$.email.$errors"
+            :key="error.$uid"
+          >
+            <div class="inputWrapper__errorMsg">{{ error.$message }}</div>
+          </div>
+        </div>
+
+        <button class="form__submitBtn" type="submit">Submit</button>
+      </form>
+    </template>
+
+    <template v-else>
+      <p class="form__successMsg">
+        Thank you for taking an interest in my app! I will notify you as soon as
+        the app is available.
+      </p>
+    </template>
   </div>
 </template>
 
 <script setup>
-// TODO: ENDED HERE!
-// TODO: ENDED HERE! Add vuelidate
-// TODO: ENDED HERE!
+import { reactive } from "vue"; // "from '@vue/composition-api'" if you are using Vue 2.x
+import useVuelidate from "@vuelidate/core";
+import { required, email } from "@vuelidate/validators";
+
+const state = reactive({
+  email: "",
+  isSuccessful: false,
+});
+
+const rules = {
+  email: { required, email }, // Matches state.contact.email
+};
+
+const v$ = useVuelidate(rules, state);
+
+const submit = async () => {
+  const result = await v$.value.$validate();
+
+  if (!result) {
+    return;
+  }
+
+  // TODO: ENDED HERE!
+  // TODO: ENDED HERE! Set up netlify form here
+  // TODO: ENDED HERE!
+  // prettier-ignore
+  console.log("-\n--\n Send This Email Now! \n >", state.email, "\n--\n-") // REMOVE_ME: remove when done!
+
+  state.email = "";
+  state.isSuccessful = true;
+  v$.value.$reset();
+};
 </script>
 
 <style lang="scss">
@@ -66,6 +116,12 @@
       width: initial;
     }
   }
+
+  &__successMsg {
+    font-weight: bold;
+    font-size: 21px;
+    color: #088158;
+  }
 }
 
 .inputWrapper {
@@ -88,6 +144,15 @@
       border-color: #0f87f0;
       box-shadow: inset 0 0 0 1px #0f87f0;
     }
+
+    .inputWrapper--error > & {
+      border-color: #c61010;
+      box-shadow: inset 0 0 0 2px #c61010;
+    }
+  }
+
+  &__errorMsg {
+    color: #c61010;
   }
 }
 </style>
