@@ -1,12 +1,12 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import TheHeader from "./components/TheHeader.vue";
-import TheHero from "./components/TheHero.vue";
-import ContentSection from "./components/ContentSection.vue";
-import TheTestimonial from "./components/TheTestimonial.vue";
-import TheCtaSection from "./components/TheCtaSection.vue";
-import TheFooter from "./components/TheFooter.vue";
+import TheHeader from "@/components/TheHeader.vue";
+import TheHero from "@/components/TheHero.vue";
+import ContentSection from "@/components/ContentSection.vue";
+import TheTestimonial from "@/components/TheTestimonial.vue";
+import TheCtaSection from "@/components/TheCtaSection.vue";
+import TheFooter from "@/components/TheFooter.vue";
 </script>
 
 <template>
