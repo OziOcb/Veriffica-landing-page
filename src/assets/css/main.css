@@ -2177,7 +2177,10 @@ li.sub-menu--item.nav-item-has-children i {
 
 @media (min-width: 992px) {
   .app-image-position-l-13 {
-    margin-bottom: 20px;
+    margin-bottom: -90px;
+  }
+  .app-image-position-l-13--minus-margin {
+    margin-bottom: -200px;
   }
 }
 

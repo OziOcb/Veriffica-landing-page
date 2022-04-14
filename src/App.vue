@@ -25,6 +25,7 @@ import TheFooter from "./components/TheFooter.vue";
           Veriffica is designed to help people without experience in buying a
           good used car.
         </h2>
+
         <p>
           It's a good starting point to
           <strong>asses the technical condition of the car</strong>
@@ -34,7 +35,12 @@ import TheFooter from "./components/TheFooter.vue";
     </div>
 
     <div
-      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative order-lg-1 order-0"
+      class="
+        offset-lg-1
+        col-lg-5 col-md-8 col-sm-10
+        position-relative
+        order-lg-1 order-0
+      "
       data-aos="fade-left"
       data-aos-duration="800"
       data-aos-once="true"
@@ -56,7 +62,7 @@ import TheFooter from "./components/TheFooter.vue";
       data-aos-duration="800"
       data-aos-once="true"
     >
-      <div class="app-image-position-l-13">
+      <div class="app-image-position-l-13--minus-margin">
         <img
           src="src/assets/image/l3/content-image-2.png"
           alt=""
@@ -77,7 +83,7 @@ import TheFooter from "./components/TheFooter.vue";
     </div>
   </ContentSection>
 
-  <ContentSection>
+  <ContentSection class="ozi-lastContentSection">
     <div
       class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1"
       data-aos="fade-right"
@@ -86,17 +92,22 @@ import TheFooter from "./components/TheFooter.vue";
     >
       <div class="content section-heading-7">
         <h2>Dark Theme</h2>
-        <p>Soothing for your eyes Good for you battery</p>
+        <p>Soothing for your eyes <br />Good for you battery</p>
       </div>
     </div>
 
     <div
-      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative order-lg-1 order-0"
+      class="
+        offset-lg-1
+        col-lg-5 col-md-8 col-sm-10
+        position-relative
+        order-lg-1 order-0
+      "
       data-aos="fade-left"
       data-aos-duration="800"
       data-aos-once="true"
     >
-      <div class="app-image-position-l-13">
+      <div class="app-image-position-l-13--minus-margin">
         <img
           src="src/assets/image/l3/content-image-3.png"
           alt=""
@@ -106,12 +117,12 @@ import TheFooter from "./components/TheFooter.vue";
     </div>
   </ContentSection>
 
-  <TheTestimonial />
+  <!-- <TheTestimonial /> -->
   <TheCtaSection />
   <TheFooter />
 </template>
 
-<style>
+<style lang="scss">
 @import "./assets/css/bootstrap.css";
 @import "./assets/fonts/icon-font/css/style.css";
 @import "./assets/fonts/typography-font/typo.css";
@@ -126,4 +137,10 @@ import TheFooter from "./components/TheFooter.vue";
 
 @import "./plugins/aos/aos.min.css";
 @import "./assets/css/main.css";
+
+.ozi {
+  &-lastContentSection {
+    margin-bottom: 180px;
+  }
+}
 </style>
