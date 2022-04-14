@@ -22,11 +22,23 @@
 
 <style lang="scss">
 .form {
-  max-width: 500px;
+  // max-width: 500px;
   padding: 10px;
   box-shadow: 1px 1px 3px rgba(#393939, 0.3);
   border-radius: 8px;
   background: #f5f5f6;
+  text-align: left !important;
+
+  &__title {
+    font-size: 31px !important;
+    font-weight: 500 !important;
+    line-height: 37.6833px !important;
+    text-align: left !important;
+    margin-bottom: 8px !important;
+    margin-top: 0px !important;
+    letter-spacing: normal !important;
+    font-family: "Mazzard H";
+  }
 
   &__inputWrapper {
     margin-bottom: 8px;

@@ -28,6 +28,15 @@
           data-aos-once="true"
         >
           <FormWaitingList class="ozi-form" />
+          <!-- <div class="ozi-appsBtn apps-btn">
+            <a href="#" class="app-store">
+              <img src="src/assets/image/l3/app-store.png" alt="" />
+            </a>
+
+            <a href="#" class="app-store">
+              <img src="src/assets/image/l3/google-play.png" alt="" />
+            </a>
+          </div> -->
 
           <div class="content ozi-hero__content">
             <h1>Be sure!</h1>
@@ -55,7 +64,8 @@ import FormWaitingList from "../components/FormWaitingList.vue";
   flex-direction: column;
 }
 
-.ozi-form {
+.ozi-form,
+.ozi-appsBtn {
   margin-top: 40px;
   @media (min-width: 992px) {
     margin-top: 0;

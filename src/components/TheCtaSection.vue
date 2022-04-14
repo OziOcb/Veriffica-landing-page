@@ -14,10 +14,11 @@
                 <span class="tagline">Time to take action</span>
 
                 <h2>
-                  Join over 30,000+ happy users & launch your product fast.
+                  Leave your email to get notification about the launch of this
+                  app.
                 </h2>
 
-                <div>TODO: FORM_ADD_YOUR_EMAIL_HERE</div>
+                <FormWaitingList />
 
                 <!-- <div class="apps-btn">
                   <a href="#" class="app-store">
@@ -35,3 +36,8 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import FormWaitingList from "@/components/FormWaitingList.vue";
+</script>
+
