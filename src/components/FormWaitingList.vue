@@ -49,7 +49,6 @@
 </template>
 
 <script setup>
-import { reactive } from "vue"; // "from '@vue/composition-api'" if you are using Vue 2.x
 import useVuelidate from "@vuelidate/core";
 import { required, email } from "@vuelidate/validators";
 import { useStore } from "@/stores/main";
