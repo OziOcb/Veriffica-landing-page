@@ -1,6 +1,6 @@
 <template>
   <div class="form">
-    <template v-if="!state.isSuccessful">
+    <template v-if="!store.hasBeenSent">
       <h2 class="form__title">Sign up for a waiting list</h2>
 
       <form class="form__form" @submit.prevent="submit">
@@ -45,10 +45,11 @@
 import { reactive } from "vue"; // "from '@vue/composition-api'" if you are using Vue 2.x
 import useVuelidate from "@vuelidate/core";
 import { required, email } from "@vuelidate/validators";
+import { useStore } from "@/stores/main";
+const store = useStore();
 
 const state = reactive({
   email: "",
-  isSuccessful: false,
 });
 
 const rules = {
@@ -71,7 +72,7 @@ const submit = async () => {
   console.log("-\n--\n Send This Email Now! \n >", state.email, "\n--\n-") // REMOVE_ME: remove when done!
 
   state.email = "";
-  state.isSuccessful = true;
+  store.hasBeenSent = true;
   v$.value.$reset();
 };
 </script>
