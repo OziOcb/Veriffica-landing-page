@@ -16,7 +16,8 @@
             type="text"
             name="Email"
             placeholder="your e-mail"
-            v-model="state.email"
+            v-model="store.email"
+            :disabled="store.isFormPending"
           />
 
           <div
@@ -28,7 +29,13 @@
           </div>
         </div>
 
-        <button class="form__submitBtn" type="submit">Submit</button>
+        <button
+          class="form__submitBtn"
+          type="submit"
+          :disabled="store.isFormPending"
+        >
+          {{ !store.isFormPending ? "Submit" : "Submitting..." }}
+        </button>
       </form>
     </template>
 
@@ -48,32 +55,31 @@ import { required, email } from "@vuelidate/validators";
 import { useStore } from "@/stores/main";
 const store = useStore();
 
-const state = reactive({
-  email: "",
-});
-
 const rules = {
   email: { required, email }, // Matches state.contact.email
 };
 
-const v$ = useVuelidate(rules, state);
+const v$ = useVuelidate(rules, store);
 
 const submit = async () => {
+  store.isFormPending = true;
   const result = await v$.value.$validate();
 
   if (!result) {
+    store.isFormPending = false;
     return;
   }
 
-  // TODO: ENDED HERE!
-  // TODO: ENDED HERE! Set up netlify form here
-  // TODO: ENDED HERE!
-  // prettier-ignore
-  console.log("-\n--\n Send This Email Now! \n >", state.email, "\n--\n-") // REMOVE_ME: remove when done!
+  setTimeout(() => {
+    // TODO: ENDED HERE!
+    // TODO: ENDED HERE! Set up netlify form here
+    // TODO: ENDED HERE!
+    // prettier-ignore
+    console.log("-\n--\n Send This Email Now! \n >", store.email, "\n--\n-") // REMOVE_ME: remove when done!
 
-  state.email = "";
-  store.hasBeenSent = true;
-  v$.value.$reset();
+    store.hasBeenSent = true;
+    store.isFormPending = true;
+  }, 3000); // REMOVE_ME: remove when done!
 };
 </script>
 
@@ -112,6 +118,9 @@ const submit = async () => {
     &:hover,
     &:focus {
       background-color: #0f87f0;
+    }
+    &:disabled {
+      background-color: #084981;
     }
     @media (min-width: 992px) {
       width: initial;
