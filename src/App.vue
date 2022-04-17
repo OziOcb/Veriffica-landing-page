@@ -10,7 +10,9 @@ import TheFooter from "@/components/TheFooter.vue";
 </script>
 
 <template>
-  <TheHeader />
+  <client-only>
+    <TheHeader />
+  </client-only>
   <TheHero />
 
   <ContentSection>
