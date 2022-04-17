@@ -35,6 +35,9 @@
           >
             <div class="inputWrapper__errorMsg">{{ error.$message }}</div>
           </div>
+          <div v-if="store.hasServerError" class="inputWrapper__errors">
+            <div class="inputWrapper__errorMsg">Server error</div>
+          </div>
         </div>
 
         <button
@@ -60,6 +63,7 @@
 import useVuelidate from "@vuelidate/core";
 import { required, email } from "@vuelidate/validators";
 import { useStore } from "@/stores/main";
+import axios from "axios";
 const store = useStore();
 
 const rules = {
@@ -67,6 +71,12 @@ const rules = {
 };
 
 const v$ = useVuelidate(rules, store);
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join("&");
+};
 
 const submit = async () => {
   store.isFormPending = true;
@@ -77,16 +87,29 @@ const submit = async () => {
     return;
   }
 
-  setTimeout(() => {
-    // TODO: ENDED HERE!
-    // TODO: ENDED HERE! Set up netlify form here (read: How to Integrate Netlify Forms in a Vue App)
-    // TODO: ENDED HERE!
-    // prettier-ignore
-    console.log("-\n--\n Send This Email Now! \n >", store.email, "\n--\n-") // REMOVE_ME: remove when done!
+  const axiosConfig = {
+    header: { "Content-Type": "application/x-www-form-urlencoded" },
+  };
+
+  try {
+    await axios.post(
+      "/",
+      encode({
+        "form-name": "signup-to-waiting-list",
+        form: {
+          email: store.email,
+        },
+      }),
+      axiosConfig
+    );
 
     store.hasBeenSent = true;
-    store.isFormPending = true;
-  }, 3000); // REMOVE_ME: remove when done!
+  } catch (error) {
+    console.log("-\n--\n error \n >", error, "\n--\n-");
+    store.hasServerError = true;
+  }
+
+  store.isFormPending = false;
 };
 </script>
 
