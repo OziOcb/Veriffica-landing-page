@@ -1,6 +1,10 @@
 <template>
   <header
-    class="site-header site-header--menu-right landing-13-menu site-header--absolute site-header--sticky"
+    class="
+      site-header site-header--menu-right
+      landing-13-menu
+      site-header--absolute site-header--sticky
+    "
   >
     <div class="container">
       <nav class="navbar site-navbar">
@@ -72,3 +76,32 @@
   fill: #03213c;
 }
 </style>
+
+<script setup>
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.querySelector(".site-header--sticky").classList.add("scrolling");
+  } else {
+    document
+      .querySelector(".site-header--sticky")
+      .classList.remove("scrolling");
+  }
+
+  if (
+    document.body.scrollTop > 700 ||
+    document.documentElement.scrollTop > 700
+  ) {
+    document
+      .querySelector(".site-header--sticky.scrolling")
+      .classList.add("reveal-header");
+  } else {
+    document
+      .querySelector(".site-header--sticky.scrolling")
+      .classList.remove("reveal-header");
+  }
+}
+</script>
