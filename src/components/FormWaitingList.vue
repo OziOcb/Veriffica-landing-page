@@ -3,7 +3,15 @@
     <template v-if="!store.hasBeenSent">
       <h2 class="form__title">Sign up for a waiting list</h2>
 
-      <form class="form__form" @submit.prevent="submit">
+      <form
+        class="form__form"
+        name="signup-to-waiting-list"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        @submit.prevent="submit"
+      >
+        <input type="hidden" name="form-name" value="signup-to-waiting-list" />
         <div
           class="form__inputWrapper inputWrapper"
           :class="{ 'inputWrapper--error': v$.email.$errors.length }"
@@ -71,7 +79,7 @@ const submit = async () => {
 
   setTimeout(() => {
     // TODO: ENDED HERE!
-    // TODO: ENDED HERE! Set up netlify form here
+    // TODO: ENDED HERE! Set up netlify form here (read: How to Integrate Netlify Forms in a Vue App)
     // TODO: ENDED HERE!
     // prettier-ignore
     console.log("-\n--\n Send This Email Now! \n >", store.email, "\n--\n-") // REMOVE_ME: remove when done!

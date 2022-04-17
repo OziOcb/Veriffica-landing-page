@@ -22,10 +22,10 @@
 
                 <!-- <div class="apps-btn">
                   <a href="#" class="app-store">
-                    <img src="src/assets/image/l3/app-store.png" alt="" />
+                    <img src="@/assets/image/l3/app-store.png" alt="" />
                   </a>
                   <a href="#" class="app-store">
-                    <img src="src/assets/image/l3/google-play.png" alt="" />
+                    <img src="@/assets/image/l3/google-play.png" alt="" />
                   </a>
                 </div> -->
               </div>

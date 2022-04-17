@@ -11,7 +11,7 @@
           <div class="footer-logo-l-13">
             <a href="#">
               <img
-                src="src/assets/image/logo/logo_veriffica--primary.svg"
+                src="@/assets/image/logo/logo_veriffica--primary.svg"
                 alt="logo"
               />
             </a>

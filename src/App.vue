@@ -46,11 +46,7 @@ import TheFooter from "@/components/TheFooter.vue";
       data-aos-once="true"
     >
       <div class="app-image-position-l-13">
-        <img
-          src="src/assets/image/l3/content-image-1.png"
-          alt=""
-          class="w-100"
-        />
+        <img src="@/assets/image/l3/content-image-1.png" alt="" class="w-100" />
       </div>
     </div>
   </ContentSection>
@@ -63,11 +59,7 @@ import TheFooter from "@/components/TheFooter.vue";
       data-aos-once="true"
     >
       <div class="app-image-position-l-13--minus-margin">
-        <img
-          src="src/assets/image/l3/content-image-2.png"
-          alt=""
-          class="w-100"
-        />
+        <img src="@/assets/image/l3/content-image-2.png" alt="" class="w-100" />
       </div>
     </div>
     <div
@@ -108,11 +100,7 @@ import TheFooter from "@/components/TheFooter.vue";
       data-aos-once="true"
     >
       <div class="app-image-position-l-13--minus-margin">
-        <img
-          src="src/assets/image/l3/content-image-3.png"
-          alt=""
-          class="w-100"
-        />
+        <img src="@/assets/image/l3/content-image-3.png" alt="" class="w-100" />
       </div>
     </div>
   </ContentSection>
@@ -123,10 +111,10 @@ import TheFooter from "@/components/TheFooter.vue";
 </template>
 
 <style lang="scss">
-@import "./assets/css/bootstrap.css";
-@import "./assets/fonts/icon-font/css/style.css";
-@import "./assets/fonts/typography-font/typo.css";
-@import "./assets/fonts/fontawesome-5/css/all.css";
+@import "@/assets/css/bootstrap.css";
+@import "@/assets/fonts/icon-font/css/style.css";
+@import "@/assets/fonts/typography-font/typo.css";
+@import "@/assets/fonts/fontawesome-5/css/all.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap'); */
@@ -135,8 +123,8 @@ import TheFooter from "@/components/TheFooter.vue";
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap'); */
 
-@import "./plugins/aos/aos.min.css";
-@import "./assets/css/main.css";
+@import "@/plugins/aos/aos.min.css";
+@import "@/assets/css/main.css";
 
 .ozi {
   &-lastContentSection {

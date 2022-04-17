@@ -27,7 +27,7 @@
                 </p>
                 <div class="d-flex customer-identity">
                   <div class="customer-img">
-                    <img src="src/assets/image/l3/client-img-2.png" alt="" />
+                    <img src="@/assets/image/l3/client-img-2.png" alt="" />
                   </div>
                   <div class="content-body">
                     <h5>Cameron Anderson</h5>

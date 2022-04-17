@@ -9,11 +9,7 @@
           data-aos-once="true"
         >
           <div class="banner-image-l-13">
-            <img
-              src="src/assets/image/l3/hero-image.png"
-              alt=""
-              class="w-100"
-            />
+            <img src="@/assets/image/l3/hero-image.png" alt="" class="w-100" />
           </div>
         </div>
 
@@ -30,11 +26,11 @@
           <FormWaitingList class="ozi-form" />
           <!-- <div class="ozi-appsBtn apps-btn">
             <a href="#" class="app-store">
-              <img src="src/assets/image/l3/app-store.png" alt="" />
+              <img src="@/assets/image/l3/app-store.png" alt="" />
             </a>
 
             <a href="#" class="app-store">
-              <img src="src/assets/image/l3/google-play.png" alt="" />
+              <img src="@/assets/image/l3/google-play.png" alt="" />
             </a>
           </div> -->
 
