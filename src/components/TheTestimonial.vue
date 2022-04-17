@@ -15,8 +15,8 @@
           <div
             class="row testimonial-area-l-13-items justify-content-center"
             data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-once="true"
+            data-aos-:duration="800"
+            data-aos-:once="true"
           >
             <div class="col-xl-4 col-md-6 col-sm-8" v-for="n in 6" :key="n">
               <div class="testimonial-card bg-white">

@@ -14,11 +14,11 @@ import TheFooter from "@/components/TheFooter.vue";
   <TheHero />
 
   <ContentSection>
-    <div
+    <aos-vue
       class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1"
-      data-aos="fade-right"
-      data-aos-duration="800"
-      data-aos-once="true"
+      animation="fade-right"
+      :duration="800"
+      :once="true"
     >
       <div class="content section-heading-7">
         <h2>
@@ -32,77 +32,77 @@ import TheFooter from "@/components/TheFooter.vue";
           and save us from spending money in a service station.
         </p>
       </div>
-    </div>
+    </aos-vue>
 
-    <div
+    <aos-vue
       class="
         offset-lg-1
         col-lg-5 col-md-8 col-sm-10
         position-relative
         order-lg-1 order-0
       "
-      data-aos="fade-left"
-      data-aos-duration="800"
-      data-aos-once="true"
+      animation="fade-left"
+      :duration="800"
+      :once="true"
     >
       <div class="app-image-position-l-13">
         <img src="@/assets/image/l3/content-image-1.png" alt="" class="w-100" />
       </div>
-    </div>
+    </aos-vue>
   </ContentSection>
 
   <ContentSection>
-    <div
+    <aos-vue
       class="col-lg-6 col-md-8 col-sm-10"
-      data-aos="fade-right"
-      data-aos-duration="800"
-      data-aos-once="true"
+      animation="fade-right"
+      :duration="800"
+      :once="true"
     >
       <div class="app-image-position-l-13--minus-margin">
         <img src="@/assets/image/l3/content-image-2.png" alt="" class="w-100" />
       </div>
-    </div>
-    <div
+    </aos-vue>
+    <aos-vue
       class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative"
-      data-aos="fade-left"
-      data-aos-duration="800"
-      data-aos-once="true"
+      animation="fade-left"
+      :duration="800"
+      :once="true"
     >
       <div class="content section-heading-7">
         <h2>Well Explained</h2>
         <p>You don't have to be an expert to use this app!</p>
       </div>
-    </div>
+    </aos-vue>
   </ContentSection>
 
   <ContentSection class="ozi-lastContentSection">
-    <div
+    <aos-vue
       class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1"
-      data-aos="fade-right"
-      data-aos-duration="800"
-      data-aos-once="true"
+      animation="fade-right"
+      :duration="800"
+      :once="true"
     >
       <div class="content section-heading-7">
         <h2>Dark Theme</h2>
         <p>Soothing for your eyes <br />Good for you battery</p>
       </div>
-    </div>
+    </aos-vue>
 
-    <div
+    <aos-vue
       class="
         offset-lg-1
         col-lg-5 col-md-8 col-sm-10
         position-relative
         order-lg-1 order-0
       "
-      data-aos="fade-left"
-      data-aos-duration="800"
-      data-aos-once="true"
+      animation="fade-left"
+      :duration="800"
+      :once="true"
     >
       <div class="app-image-position-l-13--minus-margin">
         <img src="@/assets/image/l3/content-image-3.png" alt="" class="w-100" />
       </div>
-    </div>
+    </aos-vue>
   </ContentSection>
 
   <!-- <TheTestimonial /> -->

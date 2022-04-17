@@ -1,9 +1,9 @@
 <template>
-  <div
+  <aos-vue
     class="cta-area-l-13"
-    data-aos="fade-left"
-    data-aos-duration="800"
-    data-aos-once="true"
+    animation="fade-left"
+    :duration="800"
+    :once="true"
   >
     <div class="container">
       <div class="row justify-content-center">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </aos-vue>
 </template>
 
 <script setup>

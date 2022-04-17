@@ -2,26 +2,26 @@
   <div class="hero-area-l-13 position-relative overflow-hidden">
     <div class="container">
       <div class="row position-relative justify-content-center">
-        <div
+        <aos-vue
           class="col-xl-6 col-lg-6 col-sm-9"
-          data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-once="true"
+          animation="fade-right"
+          :duration="800"
+          :once="true"
         >
           <div class="banner-image-l-13">
             <img src="@/assets/image/l3/hero-image.png" alt="" class="w-100" />
           </div>
-        </div>
+        </aos-vue>
 
-        <div
+        <aos-vue
           class="
             ozi-contentWrapper
             offset-xl-1
             col-xl-5 col-lg-6 col-md-8 col-sm-9
           "
-          data-aos="fade-left"
-          data-aos-duration="800"
-          data-aos-once="true"
+          animation="fade-left"
+          :duration="800"
+          :once="true"
         >
           <FormWaitingList class="ozi-form" />
           <!-- <div class="ozi-appsBtn apps-btn">
@@ -42,7 +42,7 @@
               a decision to buy it.
             </p>
           </div>
-        </div>
+        </aos-vue>
       </div>
     </div>
 
