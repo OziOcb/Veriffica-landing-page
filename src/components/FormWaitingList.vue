@@ -96,9 +96,7 @@ const submit = async () => {
       "/",
       encode({
         "form-name": "signup-to-waiting-list",
-        form: {
-          email: store.email,
-        },
+        email: store.email,
       }),
       axiosConfig
     );
