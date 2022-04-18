@@ -12,6 +12,12 @@
         @submit.prevent="submit"
       >
         <input type="hidden" name="form-name" value="signup-to-waiting-list" />
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
+
         <div
           class="form__inputWrapper inputWrapper"
           :class="{ 'inputWrapper--error': v$.email.$errors.length }"
@@ -192,5 +198,9 @@ const submit = async () => {
   &__errorMsg {
     color: #c61010;
   }
+}
+
+.hidden {
+  display: none !important;
 }
 </style>
