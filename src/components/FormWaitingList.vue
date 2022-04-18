@@ -22,7 +22,7 @@
             class="inputWrapper__input"
             id="email"
             type="text"
-            name="Email"
+            name="email"
             placeholder="your e-mail"
             v-model="store.email"
             :disabled="store.isFormPending"
