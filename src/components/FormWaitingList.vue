@@ -60,9 +60,6 @@
 </template>
 
 <script setup>
-// TODO: ENDED HERE!
-// TODO: ENDED HERE! useVuelidate trows and error when running 'yarn dev'
-// TODO: ENDED HERE!
 import { useVuelidate } from "@vuelidate/core";
 import { required, email } from "@vuelidate/validators";
 import { useStore } from "@/stores/main";
