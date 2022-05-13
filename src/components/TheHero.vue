@@ -58,6 +58,10 @@ import FormWaitingList from "../components/FormWaitingList.vue";
 .ozi-contentWrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 992px) {
+    margin-top: -60px;
+  }
 }
 
 .ozi-form,
@@ -84,7 +88,12 @@ import FormWaitingList from "../components/FormWaitingList.vue";
 
 .app-store {
   width: 100%;
-  max-width: 200px;
+  max-width: 230px;
+  transition: transform .3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .ozi-hero__content {

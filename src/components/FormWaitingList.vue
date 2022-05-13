@@ -1,16 +1,11 @@
 <template>
   <div class="form">
     <template v-if="!store.hasBeenSent">
-      <h2 class="form__title">Sign up for a waiting list</h2>
+      <h2 class="form__title">Looking for the Android App?</h2>
+      <h5>Sign up for a waiting list, please</h5>
 
-      <form
-        class="form__form"
-        name="signup-to-waiting-list"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        @submit.prevent="submit"
-      >
+      <form class="form__form" name="signup-to-waiting-list" method="post" data-netlify="true"
+        data-netlify-honeypot="bot-field" @submit.prevent="submit">
         <input type="hidden" name="form-name" value="signup-to-waiting-list" />
         <p class="hidden">
           <label>
@@ -18,27 +13,13 @@
           </label>
         </p>
 
-        <div
-          class="form__inputWrapper inputWrapper"
-          :class="{ 'inputWrapper--error': v$.email.$errors.length }"
-        >
+        <div class="form__inputWrapper inputWrapper" :class="{ 'inputWrapper--error': v$.email.$errors.length }">
           <label class="inputWrapper__label" for="email">Email</label>
 
-          <input
-            class="inputWrapper__input"
-            id="email"
-            type="text"
-            name="email"
-            placeholder="your e-mail"
-            v-model="store.email"
-            :disabled="store.isFormPending"
-          />
+          <input class="inputWrapper__input" id="email" type="text" name="email" placeholder="your e-mail"
+            v-model="store.email" :disabled="store.isFormPending" />
 
-          <div
-            class="inputWrapper__errors"
-            v-for="error of v$.email.$errors"
-            :key="error.$uid"
-          >
+          <div class="inputWrapper__errors" v-for="error of v$.email.$errors" :key="error.$uid">
             <div class="inputWrapper__errorMsg">{{ error.$message }}</div>
           </div>
           <div v-if="store.hasServerError" class="inputWrapper__errors">
@@ -46,11 +27,7 @@
           </div>
         </div>
 
-        <button
-          class="form__submitBtn"
-          type="submit"
-          :disabled="store.isFormPending"
-        >
+        <button class="form__submitBtn" type="submit" :disabled="store.isFormPending">
           {{ !store.isFormPending ? "Submit" : "Submitting..." }}
         </button>
       </form>
@@ -149,13 +126,16 @@ const submit = async () => {
     border-radius: 6px;
     font-weight: bold;
     border: none;
+
     &:hover,
     &:focus {
       background-color: #0f87f0;
     }
+
     &:disabled {
       background-color: #084981;
     }
+
     @media (min-width: 992px) {
       width: initial;
     }
@@ -184,12 +164,13 @@ const submit = async () => {
     border-radius: 6px;
     border: 1px solid #9a9a9a;
     outline: none;
+
     &:focus {
       border-color: #0f87f0;
       box-shadow: inset 0 0 0 1px #0f87f0;
     }
 
-    .inputWrapper--error > & {
+    .inputWrapper--error>& {
       border-color: #c61010;
       box-shadow: inset 0 0 0 2px #c61010;
     }
