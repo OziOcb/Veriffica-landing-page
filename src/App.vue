@@ -16,12 +16,8 @@ import TheFooter from "@/components/TheFooter.vue";
   <TheHero />
 
   <ContentSection>
-    <aos-vue
-      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1"
-      animation="fade-right"
-      :duration="800"
-      :once="true"
-    >
+    <aos-vue class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1" animation="fade-right" :duration="800"
+      :once="true">
       <div class="content section-heading-7">
         <h2>
           Veriffica is designed to help people without experience in buying a
@@ -36,17 +32,12 @@ import TheFooter from "@/components/TheFooter.vue";
       </div>
     </aos-vue>
 
-    <aos-vue
-      class="
+    <aos-vue class="
         offset-lg-1
         col-lg-5 col-md-8 col-sm-10
         position-relative
         order-lg-1 order-0
-      "
-      animation="fade-left"
-      :duration="800"
-      :once="true"
-    >
+      " animation="fade-left" :duration="800" :once="true">
       <div class="app-image-position-l-13">
         <img src="@/assets/image/l3/content-image-1.png" alt="" class="w-100" />
       </div>
@@ -54,53 +45,38 @@ import TheFooter from "@/components/TheFooter.vue";
   </ContentSection>
 
   <ContentSection>
-    <aos-vue
-      class="col-lg-6 col-md-8 col-sm-10"
-      animation="fade-right"
-      :duration="800"
-      :once="true"
-    >
+    <aos-vue class="col-lg-6 col-md-8 col-sm-10" animation="fade-right" :duration="800" :once="true">
       <div class="app-image-position-l-13--minus-margin">
         <img src="@/assets/image/l3/content-image-2.png" alt="" class="w-100" />
       </div>
     </aos-vue>
-    <aos-vue
-      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative"
-      animation="fade-left"
-      :duration="800"
-      :once="true"
-    >
+    <aos-vue class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative" animation="fade-left" :duration="800"
+      :once="true">
       <div class="content section-heading-7">
-        <h2>Well Explained</h2>
-        <p>You don't have to be an expert to use this app!</p>
+        <h2>See the Demo!</h2>
+        <p>
+          You can watch a short demo here:
+          <a href="https://youtu.be/259IPjqXzw8" rel="noreferrer noopener" target="_blank">YouTube</a>
+        </p>
       </div>
     </aos-vue>
   </ContentSection>
 
   <ContentSection class="ozi-lastContentSection">
-    <aos-vue
-      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1"
-      animation="fade-right"
-      :duration="800"
-      :once="true"
-    >
+    <aos-vue class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1" animation="fade-right" :duration="800"
+      :once="true">
       <div class="content section-heading-7">
         <h2>Dark Theme</h2>
         <p>Soothing for your eyes <br />Good for you battery</p>
       </div>
     </aos-vue>
 
-    <aos-vue
-      class="
+    <aos-vue class="
         offset-lg-1
         col-lg-5 col-md-8 col-sm-10
         position-relative
         order-lg-1 order-0
-      "
-      animation="fade-left"
-      :duration="800"
-      :once="true"
-    >
+      " animation="fade-left" :duration="800" :once="true">
       <div class="app-image-position-l-13--minus-margin">
         <img src="@/assets/image/l3/content-image-3.png" alt="" class="w-100" />
       </div>
