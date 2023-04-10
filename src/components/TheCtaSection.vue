@@ -13,10 +13,14 @@
               <div class="content">
                 <span class="tagline">Time to take action</span>
 
-                <h2>
-                  Leave your email to get notification about the launch of this
-                  app.
-                </h2>
+                <h2>Don't miss out on the exciting launch of our app!</h2>
+                <p>
+                  Leave your email with us to receive timely notifications and
+                  be among the first to know when our app is ready for use. Stay
+                  ahead of the game and be part of our exclusive launch
+                  community. Sign up now and be one step closer to experiencing
+                  our cutting-edge app!
+                </p>
 
                 <FormWaitingList />
 
@@ -40,4 +44,3 @@
 <script setup>
 import FormWaitingList from "@/components/FormWaitingList.vue";
 </script>
-

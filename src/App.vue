@@ -16,28 +16,35 @@ import TheFooter from "@/components/TheFooter.vue";
   <TheHero />
 
   <ContentSection>
-    <aos-vue class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1" animation="fade-right" :duration="800"
-      :once="true">
+    <aos-vue
+      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1"
+      animation="fade-right"
+      :duration="800"
+      :once="true"
+    >
       <div class="content section-heading-7">
-        <h2>
-          Veriffica is designed to help people without experience in buying a
-          good used car.
-        </h2>
+        <h2>Ensure a Wise Vehicle Purchase with Our Comprehensive Tool.</h2>
 
         <p>
-          It's a good starting point to
-          <strong>asses the technical condition of the car</strong>
-          and save us from spending money in a service station.
+          Before deciding on your next vehicle, make sure you're equipped with
+          the right information. Our user-friendly application provides a
+          step-by-step guide on how to conduct a thorough inspection of the
+          car's essential elements. Simply answer "Yes," "No," or "I don't know"
+          as you go through the checklist. Our system will generate a percentage
+          score, indicating the car's overall condition. A higher score means a
+          potentially better car. Don't miss out on this invaluable tool for
+          informed decision-making. Optimize your vehicle purchase process with
+          our inspection checklist today!
         </p>
       </div>
     </aos-vue>
 
-    <aos-vue class="
-        offset-lg-1
-        col-lg-5 col-md-8 col-sm-10
-        position-relative
-        order-lg-1 order-0
-      " animation="fade-left" :duration="800" :once="true">
+    <aos-vue
+      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative order-lg-1 order-0"
+      animation="fade-left"
+      :duration="800"
+      :once="true"
+    >
       <div class="app-image-position-l-13">
         <img src="@/assets/image/l3/content-image-1.png" alt="" class="w-100" />
       </div>
@@ -45,38 +52,65 @@ import TheFooter from "@/components/TheFooter.vue";
   </ContentSection>
 
   <ContentSection>
-    <aos-vue class="col-lg-6 col-md-8 col-sm-10" animation="fade-right" :duration="800" :once="true">
+    <aos-vue
+      class="col-lg-6 col-md-8 col-sm-10"
+      animation="fade-right"
+      :duration="800"
+      :once="true"
+    >
       <div class="app-image-position-l-13--minus-margin">
         <img src="@/assets/image/l3/content-image-2.png" alt="" class="w-100" />
       </div>
     </aos-vue>
-    <aos-vue class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative" animation="fade-left" :duration="800"
-      :once="true">
+    <aos-vue
+      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative"
+      animation="fade-left"
+      :duration="800"
+      :once="true"
+    >
       <div class="content section-heading-7">
-        <h2>See the Demo!</h2>
+        <h2>Experience the Demo in Action!</h2>
         <p>
-          You can watch a short demo here:
-          <a href="https://youtu.be/259IPjqXzw8" rel="noreferrer noopener" target="_blank">YouTube</a>
+          Curious to see how it works? Watch our short demo on YouTube to get a
+          firsthand look at our innovative solution in action. Click the link
+          below to watch the demo now!
+          <br />
+          <a
+            href="https://youtu.be/259IPjqXzw8"
+            rel="noreferrer noopener"
+            target="_blank"
+            >YouTube</a
+          >
         </p>
       </div>
     </aos-vue>
   </ContentSection>
 
   <ContentSection class="ozi-lastContentSection">
-    <aos-vue class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1" animation="fade-right" :duration="800"
-      :once="true">
+    <aos-vue
+      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 order-lg-1 order-1"
+      animation="fade-right"
+      :duration="800"
+      :once="true"
+    >
       <div class="content section-heading-7">
-        <h2>Dark Theme</h2>
-        <p>Soothing for your eyes <br />Good for you battery</p>
+        <h2>Enhance Your Experience with Dark Theme</h2>
+        <p>
+          Give your eyes a break with our soothing Dark Theme. Not only does it
+          reduce eye strain, but it's also beneficial for your device's battery
+          life. With Dark Theme, you can enjoy a sleek and stylish interface
+          while taking care of your eyes and conserving battery power. Try it
+          now and elevate your user experience to a whole new level!
+        </p>
       </div>
     </aos-vue>
 
-    <aos-vue class="
-        offset-lg-1
-        col-lg-5 col-md-8 col-sm-10
-        position-relative
-        order-lg-1 order-0
-      " animation="fade-left" :duration="800" :once="true">
+    <aos-vue
+      class="offset-lg-1 col-lg-5 col-md-8 col-sm-10 position-relative order-lg-1 order-0"
+      animation="fade-left"
+      :duration="800"
+      :once="true"
+    >
       <div class="app-image-position-l-13--minus-margin">
         <img src="@/assets/image/l3/content-image-3.png" alt="" class="w-100" />
       </div>
