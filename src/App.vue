@@ -27,14 +27,18 @@ import TheFooter from "@/components/TheFooter.vue";
 
         <p>
           Before deciding on your next vehicle, make sure you're equipped with
-          the right information. Our user-friendly application provides a
-          step-by-step guide on how to conduct a thorough inspection of the
-          car's essential elements. Simply answer "Yes," "No," or "I don't know"
-          as you go through the checklist. Our system will generate a percentage
+          the right information. Our
+          <strong>user-friendly application</strong> provides a
+          <strong>step-by-step guide</strong> on how to
+          <strong
+            >conduct a thorough inspection of the car's essential
+            elements</strong
+          >. Simply answer "Yes," "No," or "I don't know" as you go through the
+          <strong>checklist</strong>. Our system will generate a percentage
           score, indicating the car's overall condition. A higher score means a
           potentially better car. Don't miss out on this invaluable tool for
           informed decision-making. Optimize your vehicle purchase process with
-          our inspection checklist today!
+          our <strong>inspection checklist</strong> today!
         </p>
       </div>
     </aos-vue>
@@ -71,9 +75,9 @@ import TheFooter from "@/components/TheFooter.vue";
       <div class="content section-heading-7">
         <h2>Experience the Demo in Action!</h2>
         <p>
-          Curious to see how it works? Watch our short demo on YouTube to get a
-          firsthand look at our innovative solution in action. Click the link
-          below to watch the demo now!
+          Curious to see how it works? Watch our short <strong>demo</strong> on
+          YouTube to get a firsthand look at our innovative solution in action.
+          Click the link below to watch the demo now!
           <br />
           <a
             href="https://youtu.be/259IPjqXzw8"
@@ -98,7 +102,8 @@ import TheFooter from "@/components/TheFooter.vue";
         <p>
           Give your eyes a break with our soothing Dark Theme. Not only does it
           reduce eye strain, but it's also beneficial for your device's battery
-          life. With Dark Theme, you can enjoy a sleek and stylish interface
+          life. With Dark Theme, you can enjoy a sleek and
+          <strong>stylish interface</strong>
           while taking care of your eyes and conserving battery power. Try it
           now and elevate your user experience to a whole new level!
         </p>

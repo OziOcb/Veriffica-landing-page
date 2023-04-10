@@ -44,10 +44,14 @@
               Buying a Used Car!
             </h2>
             <p>
-              Are you new to buying used cars and want to ensure you make a wise
-              decision? Look no further! Verrifica is here to help. Our
-              comprehensive checklist allows you to assess all the crucial
-              elements of a vehicle before making a purchase.
+              Are you new to <strong>buying used cars</strong> and want to
+              ensure you make a <strong>wise</strong> decision? Look no further!
+              Verrifica is here to help. Our
+              <strong>comprehensive checklist</strong> allows you to
+              <strong
+                >assess all the crucial elements of a vehicle before making a
+                purchase.</strong
+              >
             </p>
           </div>
         </aos-vue>
